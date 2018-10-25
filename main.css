@@ -1,0 +1,237 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: white; 
+    
+}
+
+
+#main {
+    padding: 5px;
+    text-align: center;
+    font-family: Lato, 'Times New Roman', Times, serif;
+    color:#2D2D2D;
+    font-size: 20px;
+    
+}
+
+#title {
+    
+    font-weight: 900;
+    font-size: 300%;
+    color: whitesmoke;
+    padding: 0%;
+    margin: 10px 0px 0px 0px ;
+    background-color: #2D2D2D;
+    
+}
+
+#title-2 {
+    font-weight: 900;
+    font-size: 200%;
+    color: whitesmoke;
+    padding: 0%;
+    margin: 0px 0px 5px 0px ;
+    background-color: #2D2D2D;
+    
+}
+
+#image {  
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+
+}
+
+@media (max-width: 1900px){
+    #image {
+        width: 70%;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        padding: 0%;
+    }
+}
+
+#img-caption {
+    margin-top: -1%;  
+    padding: 0%;
+    font-weight: 900;
+    font-size: 120%;
+    
+    }
+
+#heading-middle {
+    color: #2d2d2d;
+    font-weight: 900;
+    font-size: 250%;
+    margin: 5% 0% 3% 0%;
+}
+
+
+.half1 {
+    float: left;
+    text-align: center;
+    float: left;
+    width: 40%;
+    margin-left: 4%;
+    padding: 0 1em;
+    color: #2d2d2d;
+    font-weight: 900;    
+    position: relative;
+}
+
+.half2 {
+    float: left;
+    text-align: center;
+    float: right;
+    width: 40%;
+    margin-right: 4%;
+    padding: 0 1em;
+    color: #2d2d2d;
+    font-weight: 900;   
+    position: relative; 
+}
+
+/* Acordeon styles */
+.tab {    
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #2D2D2D;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    max-height: 0;
+    overflow: visible;
+    background: #2d2d2d;
+    -webkit-transition: max-height .55s;
+    -o-transition: max-height .55s;
+    transition: max-height .55s;
+  }
+  
+  .tab-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  input:checked ~ .tab-content {
+    max-height: 10em;
+    overflow-y: scroll;
+    margin:0 0 0.1em 0;
+  }
+  /* Icon */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .55s;
+    -o-transition: all .55s;
+    transition: all .55s;
+  }
+  input[type=checkbox] + label::after {
+    content: "+";
+  }
+  
+  input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  /* Second column */
+
+  .tab2 {    
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #2D2D2D;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+  
+  .tab-content2 {
+    max-height: 0;
+    overflow: visible;
+    background: #2d2d2d;
+    -webkit-transition: max-height .55s;
+    -o-transition: max-height .55s;
+    transition: max-height .55s;
+  }
+  
+  .tab-content2 p {
+    margin: 1em;
+  }
+  /* :checked */
+  input:checked ~ .tab-content2 {
+    max-height: 10em;
+    overflow-y: scroll;
+    margin:0 0 0.1em 0;
+  }
+  /* Icon */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .55s;
+    -o-transition: all .55s;
+    transition: all .55s;
+  }
+  input[type=checkbox] + label::after {
+    content: "+";
+  }
+  
+  input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+
+  #tribute-link {
+    color: black;
+    font-weight: 700;
+    padding: 1px 10px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    display: block;
+    position: fixed;
+    top: 370px ;
+    left: 95%;
+    right: 0%;      
+    text-decoration-line: none;
+    cursor: pointer;
+}
